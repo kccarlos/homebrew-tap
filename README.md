@@ -26,7 +26,7 @@ brew install --cask kccarlos/tap/gitcontext
 ```
 
 The macOS build is a universal app. GitContext also runs on the web at
-[gitcontext.xyz](https://gitcontext.xyz), and has Windows and Linux builds (`.msi`/`.exe`,
+[kccarlos.github.io/gitcontext](https://kccarlos.github.io/gitcontext/), and has Windows and Linux builds (`.msi`/`.exe`,
 `.deb`, `.rpm`, `.AppImage`) on its
 [GitHub Releases](https://github.com/kccarlos/gitcontext/releases/latest) page. These casks
 are for macOS only, so Windows and Linux users should download from there.
