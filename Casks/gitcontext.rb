@@ -1,6 +1,6 @@
 cask "gitcontext" do
-  version "2.4.1"
-  sha256 "7e1c029f5db96ee9a44eaa2e7fc1c199dcbd2d91a31562f1b84d0edf9edf3e54"
+  version "2.4.2"
+  sha256 "fd622657aeee7de91de96b7389cdbfda52368af42cc72527a33f649468d98fdb"
 
   url "https://github.com/kccarlos/gitcontext/releases/download/v#{version}/GitContext_#{version}_universal.dmg"
   name "GitContext"
