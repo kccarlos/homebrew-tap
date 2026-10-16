@@ -6,6 +6,7 @@ Free, open-source apps by [kccarlos](https://github.com/kccarlos), installable w
 | --- | --- | --- |
 | [KVoice](https://github.com/kccarlos/kvoice) | Hold a shortcut, speak, and get finished text in any Mac app, transcribed on your Mac, with optional AI actions to polish, summarize or translate. | `brew install --cask kccarlos/tap/kvoice` |
 | [GitContext](https://github.com/kccarlos/gitcontext) | Package Git diffs and code into LLM-ready context, fully offline. | `brew install --cask kccarlos/tap/gitcontext` |
+| [sheepdog](https://github.com/kccarlos/herdr-sheepdog) | Manage coding agents running in herdr by voice, away from the screen. | `brew install kccarlos/tap/sheepdog` |
 
 Each cask is updated automatically when its app publishes a new release, and installs the
 same notarized build as the DMG on that app's GitHub Releases page.
