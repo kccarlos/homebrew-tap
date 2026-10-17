@@ -1,6 +1,6 @@
 cask "kvoice" do
-  version "0.1.3"
-  sha256 "296984ad85617d76e9a47b2f6e444146a5f5f0c7d661ca05290c3d850148479d"
+  version "0.1.5"
+  sha256 "0c1665f35d64d99d6c13949fef8e0f6583499777ef7b5feca84f971aa85775b5"
 
   url "https://github.com/kccarlos/kvoice/releases/download/v#{version}/KVoice-#{version}.dmg"
   name "KVoice"
