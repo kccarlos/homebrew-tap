@@ -1,7 +1,7 @@
 # Homebrew formula template for kccarlos/homebrew-tap (Formula/sheepdog.rb).
 # Rendered by packaging/homebrew/render.sh from the release's checksums.txt
 # after the darwin tarball has been signed and notarized (the homebrew job
-# in .github/workflows/release.yml). The placeholders are v0.1.9 and the two
+# in .github/workflows/release.yml). The placeholders are v0.1.10 and the two
 # sha256 sums; Homebrew reads the version from the URL (an explicit
 # `version` fails `brew audit --strict` as redundant).
 class Sheepdog < Formula
@@ -11,15 +11,15 @@ class Sheepdog < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/kccarlos/herdr-sheepdog/releases/download/v0.1.9/sheepdog_v0.1.9_darwin_arm64.tar.gz"
-      sha256 "c6dba1c1502702486b89e1a72afecef5e4665888aedfe902b346013f31b10cff"
+      url "https://github.com/kccarlos/herdr-sheepdog/releases/download/v0.1.10/sheepdog_v0.1.10_darwin_arm64.tar.gz"
+      sha256 "84a888d28dcfe943a346e7e815b541345ada972b0a0b8a79995638d81f3af2bd"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/kccarlos/herdr-sheepdog/releases/download/v0.1.9/sheepdog_v0.1.9_linux_amd64.tar.gz"
-      sha256 "6d76938bed678b5068ac79b7b73fe1759b23d5c3ecb6368bbc5a1ef18decc411"
+      url "https://github.com/kccarlos/herdr-sheepdog/releases/download/v0.1.10/sheepdog_v0.1.10_linux_amd64.tar.gz"
+      sha256 "a3742c0145f36e47892f11fbdd8064bdd3b3bbd997a7dc56076f06a84bd05f03"
     end
   end
 
