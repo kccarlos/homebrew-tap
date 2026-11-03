@@ -2,14 +2,14 @@
 # Rendered by packaging/homebrew/render.sh --cask from the release's
 # checksums.txt after Sheepdog.app has been signed, notarized and stapled
 # (the homebrew job in .github/workflows/release.yml). The placeholders are
-# v0.1.21, 0.1.21 (the tag without its "v" and any pre-release suffix, what
+# v0.1.22, 0.1.22 (the tag without its "v" and any pre-release suffix, what
 # scripts/release-sign-app.sh puts in the zip's name) and the zip's sha256.
 # The token is sheepdog-app because the formula already is `sheepdog`.
 cask "sheepdog-app" do
-  version "0.1.21"
-  sha256 "77fa6df81bb4e39a167297326312f118ad25df3a026f255acb6afb8a68ed0ca5"
+  version "0.1.22"
+  sha256 "5eccfdb82594e45c51744ddf8569ed14599e70a049cdd1fffafdcaac63a7afe0"
 
-  url "https://github.com/kccarlos/herdr-sheepdog/releases/download/v0.1.21/Sheepdog-#{version}-macos.zip"
+  url "https://github.com/kccarlos/herdr-sheepdog/releases/download/v0.1.22/Sheepdog-#{version}-macos.zip"
   name "Sheepdog"
   desc "Menu-bar app for talking to your coding agents (the Mac client of sheepdog)"
   homepage "https://github.com/kccarlos/herdr-sheepdog"
@@ -23,9 +23,16 @@ cask "sheepdog-app" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Sheepdog.app"
+
+  # `brew upgrade` quits the running app before it swaps the bundle and,
+  # when it quit one, opens the new version afterwards (a fresh install never
+  # launches it). Without this a menu-bar app keeps the old code and icon in
+  # memory until the user relaunches it by hand. The quit runs from the
+  # cask being replaced, so it first applies on the upgrade after this one.
+  uninstall quit: "com.github.kccarlos.herdr-sheepdog-mac"
 
   zap trash: [
     "~/Library/Caches/com.github.kccarlos.herdr-sheepdog-mac",
