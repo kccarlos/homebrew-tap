@@ -2,14 +2,14 @@
 # Rendered by packaging/homebrew/render.sh --cask from the release's
 # checksums.txt after Sheepdog.app has been signed, notarized and stapled
 # (the homebrew job in .github/workflows/release.yml). The placeholders are
-# v0.1.20, 0.1.20 (the tag without its "v" and any pre-release suffix, what
+# v0.1.21, 0.1.21 (the tag without its "v" and any pre-release suffix, what
 # scripts/release-sign-app.sh puts in the zip's name) and the zip's sha256.
 # The token is sheepdog-app because the formula already is `sheepdog`.
 cask "sheepdog-app" do
-  version "0.1.20"
-  sha256 "9fd2feb17b142016c14fffe60d4108b187836f6319474905083401432aacd899"
+  version "0.1.21"
+  sha256 "77fa6df81bb4e39a167297326312f118ad25df3a026f255acb6afb8a68ed0ca5"
 
-  url "https://github.com/kccarlos/herdr-sheepdog/releases/download/v0.1.20/Sheepdog-#{version}-macos.zip"
+  url "https://github.com/kccarlos/herdr-sheepdog/releases/download/v0.1.21/Sheepdog-#{version}-macos.zip"
   name "Sheepdog"
   desc "Menu-bar app for talking to your coding agents (the Mac client of sheepdog)"
   homepage "https://github.com/kccarlos/herdr-sheepdog"
